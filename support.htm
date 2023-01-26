@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SXEWYVWC8"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-7SXEWYVWC8');
+	</script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-N9DD7D2');</script>
+	<!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="テキスト入力支援ツール「ペースター」の紹介ページ">
+    <meta name="keywords" content="ペースター,テキスト入力支援ツール,クリップボード拡張,定型文入力">
+    <title>サポート</title>
+    <link rel="stylesheet" href="style.css?ver=103" type="text/css" media="screen">
+    <!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+    <script>
+        function expand(id) {
+            var obj = document.getElementById(id);
+
+            if (!obj) return;
+
+            if (obj.style.display == 'none') {
+                obj.style.display = 'block';
+                obj.previousElementSibling.style.listStyleImage = "url(images/item_expand.gif)";
+            }
+            else {
+                obj.previousElementSibling.style.listStyleImage = "url(images/item_faq.gif)";
+                obj.style.display = 'none';
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9DD7D2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- ヘッダー -->
+    <div id="header">
+        <div class="inner">
+
+            <h1>テキスト入力支援ツール「ペースター」の公式サイトです</h1>
+
+            <!-- ロゴ -->
+            <div class="logo">
+                <a href="index.html">Autumn Soft<br><span>Presented by Simplex Co., Ltd.</span></a>
+            </div>
+            <!-- / ロゴ -->
+
+            <!-- 電話番号+受付時間 -->
+			<div class="info">
+				<!-- <p class="support_style"><a href="paster.htm#donation">ペースターへのご支援のお願い</a></p> -->
+				<!-- <p>受付時間: 平日 AM 10:00 〜 PM 5:00</p> -->
+			</div>
+            <!-- / 電話番号+受付時間 -->
+
+            <!-- トップナビゲーション -->
+            <ul id="topnav">
+                <li><a href="index.html">トップページ<br><span>Top</span></a></li>
+                <li><a href="paster.htm">ペースター<br><span>Paster</span></a></li>
+                <li class="active"><a href="support.htm">サポート<br><span>Support</span></a></li>
+                <li><a href="programming.htm">プログラミング<br><span>Programming</span></a></li>
+                <li><a href="job.htm">お仕事の依頼<br><span>Job Request</span></a></li>
+                <li><a href="access.htm">お問い合わせ<br><span>Contact</span></a></li>
+            </ul>
+            <!-- トップナビゲーション -->
+        </div>
+    </div>
+    <!-- / ヘッダー -->
+
+    <!-- メイン画像 -->
+    <div id="mainBanner" class="subImg">
+        <div class="inner">
+            <img src="images/sub-logo.jpg" width="940" height="200" alt="">
+            <div class="slogan">
+                <h2>【Windows専用のドネーションウェア】</h2>
+                <h3>ペースターは一度使い始めたら手放せなくなる、とっても便利なテキスト入力ツールです！</h3>
+            </div>
+        </div>
+    </div>
+    <!-- / メイン画像 -->
+
+
+    <div id="wrapper">
+
+        <!-- コンテンツ -->
+        <section id="main" class="v-space">
+            <!-- パンくずリスト -->
+            <section>
+                <div id="breadNavi"> <a href="index.html">トップ</a>　&gt;　サポート
+                </div>
+            </section>
+
+            <h2>サポート</h2>
+
+            <section class="content">
+                <h3 id="intro" class="heading">よくある質問（ペースター）</h3>
+                <article class="grid" style="width:100%;">
+                    <p>ペースターに関してよく寄せられる質問です。参考にしてみてください。</p>
+
+                    <ul>
+                        <li class="no-sep"><a href="#faq_pstr_custom">「カスタムメニュー」関連</a></li>
+                        <li class="no-sep"><a href="#faq_pstr_stack">「スタックメニュー」関連</a></li>
+                        <li class="no-sep"><a href="#faq_pstr_etc">「その他」の項目</a></li>
+                    </ul>
+
+                    <h4 id="faq_pstr_custom">「カスタムメニュー」関連</h4>
+                    <ul>
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_custom_001')">カスタムメニューファイルでアクセスキーを「サンプル(&S)」のように指定しているのに、実際にメニューを表示すると「サンプル(A)」のように別の文字になってしまっています。</a>
+                        </li>
+
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_custom_001" style="display: none;">
+                            これは、<strong>アクセスキーの自動生成機能が有効になっているか、メニューファイルでアクセスキーを制御するディレクティブが使用されている</strong>ものと思います。<br><br>
+
+                            ［ペースターの設定－カスタムメニュー］ダイアログの「アクセスキーの自動生成」の設定を確認してみてください。「なし」以外に設定されている場合には、メニューファイルの記述を無視して、ペースターが自動的にアクセスキーを割り当てます。<br><br>
+
+                            また、上記のダイアログの設定が「なし」の場合には、メニューファイルの該当箇所の前後に以下のようなディレクティブがないか、確認してみてください。<br><br>
+
+                            <pre class="smp-code">
+@access_key "End"
+
+サンプル(&S) | テストです。
+
+@end_access_key
+                                </pre>
+                            <br>
+                            このような場合にもメニューファイルの記述を無視して、ペースターが自動的にアクセスキーを割り当てます。自分で記述した設定を有効にするには、ディレクティブを削除してください。
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_custom_002')">[Item]、[123cm]のように半角の大カッコ（"["や"]"）を使用したテキストを貼り付けたいのですが、エラーメッセージが表示されたりカッコの部分がスルーされてしまいます。</a>
+                        </li>
+
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_custom_002" style="display: none;">
+                            カスタムメニューファイルの本文定義欄では、半角の大カッコはタグの機能のために予約されています。例えば、[Y1]/[T1]/[D1]
+                            のように記述して、現在の日付を貼り付けたりします。<br><br>
+
+                            そこで、半角の大カッコそのものを貼り付けたい場合には以下のようなタグを使用してください。<br><br>
+
+                            <strong>"[" -&gt; [&1]<br>
+                                "]" -&gt; [&2]</strong><br><br>
+
+                            例えば、[Item]のようなテキストを貼り付ける場合には、[&1]Item[&2]のように記述します。
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_custom_003')">Webサイトの自動ログオン用のキーマクロを作成したのですがうまく動作しません。</a>
+                        </li>
+
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_custom_003" style="display: none;">
+                            ログオン用のキー操作を正しく記述しているのに、うまく動作しない場合には、Webブラウザの<strong>オートコンプリートの設定を確認</strong>してみてください。
+                            この機能がオンの時には、ＩＤを入力して[Tab]キーなどを押した時に、自動的にパスワードが入力されてしまい、その後でさらにペースターがパスワードを貼り付けるなどしてしまうことがあります。<br><br>
+
+                            従って、ペースターのキーマクロで自動ログオンを行う場合には、Webブラウザのオートコンプリートはオフにしておいてください。
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_custom_004')">テキスト修飾のタグで修飾するテキストに「空白記号やタブ記号」を指定したいのですがうまくいきません。</a>
+                        </li>
+
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_custom_004" style="display: none;">
+                            テキスト修飾のタグ（[E (xxxn)]）は「E」の後にある空白文字やタブ記号を自動的にトリミングしてしまいます。<br>
+                            ただし、<strong>「E」の代わりに「E:」を使用する</strong>ことにより、これらのトリミング（具体的には、左修飾記号の左側の空白と、右修飾記号の右側の空白です）を回避することができます。
+                            このオプションを使用すると、修飾記号として空白記号そのものを扱えるようになります。つまり、<strong>[E:～xxx～]のように記述すると「～」の位置にあるテキストが空白記号も含めてそのまま修飾記号として扱われます</strong>。<br>
+                            例えば、[E: xxxn ]のように記述した場合には、左修飾記号は「 」、右修飾記号は「 」となります。また、[E: (xxx) ]のように記述した場合には、
+                            左修飾記号は「(」、右修飾記号は「) 」のようになり、小カッコの前後に空白記号を追加することもできます。
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_custom_005')">選択されている複数行のテキストから空白行をまとめて削除したい</a></li>
+
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_custom_005" style="display: none;">
+                            空白行を削除したい場合には、以下のように記述してみてください。<br>
+                            ここでは半角や全角のスペースやタブ記号だけからなる行も空白行としています。また、空白行ではなくても、行頭と行末に空白文字がある場合には削除するようにしてみました。このあたりは、用途に応じて変えてみてください。<br><br>
+
+                            なお、以下のサンプルはパイプ機能を使用していますので、Ver6.04以降のバージョンをインストールしてから試してみてください。<br><br>
+
+                            <pre class="smp-code">
+空白行の削除とトリミング | 
+  [|]
+
+  ; 空白行の削除...
+  [@ s/^[ \t　]*\n//mgk]
+
+  ; 各行の行頭と行末にある空白を削除...
+  [@ s/^[ 　\t]*(.*?)[ 　\t]*$/$1/gmk]
+/E
+</pre>
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_custom_006')">正規表現のタグで指定する修飾子の「m」や「s」の違いがよく分かりません。</a>
+                        </li>
+
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_custom_006" style="display: none;">
+                            目的にあった正規表現を作成する上でとても重要なポイントが<strong>「マッチモード」</strong>です。具体的には、「（指定なし）」「m」「s」の３つのパターンがあり、
+                            それぞれ<strong>通常モード、複数行モード、単一行モード</strong>と呼ばれます。<br><br>
+
+                            これらのモード指定によって、２つのアンカー（^, $）とドット記号（.）の解釈が変わってきます。
+                            特に改行記号の前後に対しては正確に理解しておかないと、意図通りの変換ができないことがあります。<br><br>
+
+                            以下では簡単な文字列と正規表現を使用して３つのパターンの違いについて説明したいと思います。<strong>「Perl
+                                v5.10」でもペースターが利用している「bregonig.dll」でも同じ結果</strong>になりました。<br><br>
+
+                            <pre class="smp-code">
+<span class="blue_normal">
+テスト文字列：「aaa\nbbb\nccc\n」
+テスト方法：テスト文字列に対して「^ $ .」がマッチする箇所を調べ、
+もしマッチすれば「x」に置き換えます。</span>
+
+●<b>通常モードの変換結果</b>
+「s/^/x/g」で変換すると、「<span class="red_bold">x</span>aaa\nbbb\nccc\n」のようになります。
+「s/$/x/g」で変換すると、「aaa\nbbb\nccc<span class="red_bold">x</span>\n<span class="red_bold">x</span>」のようになります。
+「s/./x/g」で変換すると、「<span class="red_bold">xxx</span>\n<span class="red_bold">xxx</span>\n<span class="red_bold">xxx</span>\n」のようになります。
+
+この結果をまとめると、
+・アンカー「^」は文字列の先頭にのみマッチします。
+・アンカー「$」は文字列の末尾にマッチします。
+・アンカー「$」は文字列の最後の文字が改行記号であればその直前にもマッチします。
+・ドット記号「.」は 改行記号以外の文字にマッチします。
+
+●<b>複数行モードの変換結果</b>
+「s/^/x/mg」で変換すると「<span class="red_bold">x</span>aaa\n<span class="red_bold">x</span>bbb\n<span class="red_bold">x</span>ccc\n」のようになります。
+「s/$/x/mg」で変換すると「aaa<span class="red_bold">x</span>\nbbb<span class="red_bold">x</span>\nccc<span class="red_bold">x</span>\n<span class="red_bold">x</span>」のようになります。
+「s/./x/mg」で変換すると「<span class="red_bold">xxx</span>\n<span class="red_bold">xxx</span>\n<span class="red_bold">xxx</span>\n」のようになります。
+
+この結果をまとめると、
+・アンカー「^」は文字列の先頭にマッチします。
+・アンカー「^」は改行記号の直後にもマッチします。
+　（それが文字列の末尾ならマッチしません）
+・アンカー「$」は文字列の末尾にマッチします。
+・アンカー「$」は改行記号の直前にもマッチします。
+　（それが文字列の先頭でもマッチします）
+ドット記号「.」は 改行記号以外の文字にマッチします。
+
+●<b>単一行モードの変換結果</b>
+「s/^/x/sg」で変換すると「<span class="red_bold">x</span>aaa\nbbb\nccc\n」のようになります。
+「s/$/x/sg」で変換すると「aaa\nbbb\nccc<span class="red_bold">x</span>\n<span class="red_bold">x</span>」のようになります。
+「s/./x/sg」で変換すると「<span class="red_bold">xxxxxxxxxxxx</span>」のようになります。
+
+この結果をまとめると、
+・アンカー「^」は文字列の先頭にのみマッチします。
+・アンカー「$」は文字列の末尾にマッチします。
+・アンカー「$」は文字列の最後の文字が改行記号であればその直前にもマッチします。
+・ドット記号「.」は 改行記号を含めてすべての文字にマッチします。
+</pre>
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_custom_007')">Unicode形式でカスタムメニューファイルを作成する場合には、どのようにすれば良いのですか？</a>
+                        </li>
+
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_custom_007" style="display: none;">
+                            基本的にはペースターの設定ダイアログのカスタムメニューのタブにある「メニューファイルの設定」の欄で、
+                            Unicode形式で保存したいファイルを選択してから[Unicode]にチェックを入れます。<br>
+                            また、ファイルを作成する初期段階からUnicodeで保存する場合には、テキストエディターのファイル保存のフォーマットで
+                            <strong>「UTF16 (BOM付き)」</strong>を指定してください。
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a href="javascript:expand('pstr_custom_107')">[Tips]
+                                メルマガなどの見出し飾り</a></li>
+
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_custom_107" style="display: none;">
+                            ■ 見出し<br>
+                            簡単な説明文１<br>
+                            簡単な説明文２<br>
+                            …<br><br>
+
+                            のようなテキストを選択して、<br><br>
+
+                            ┌──────────────────────────<br>
+                            │■ 見出し<br>
+                            │簡単な説明文１<br>
+                            │簡単な説明文２<br>
+                            │…<br>
+                            │<br><br>
+
+                            のようなテキスト加工を行う方法はあるでしょうか？<br><br>
+
+                            <pre class="smp-code">
+; 以下のような記述で大丈夫だと思います。
+; [!X1]タグは選択されているテキストを切り取って、クリップボードに
+; コピーします。このテキストは後から[C1]タグで参照することができます。
+; [&C]タグはその行の改行記号を削除するものです。
+; そして、見出し飾りのトップを出力してから、選択されていたテキストの
+; 各行の先頭に「│」を追加します。これは、[C1,│]タグで行います。
+; 最後に「│」と[&R]タグで改行記号を追加して終わりです。
+
+メルマガの見出し飾り | 
+  [/][!X1][&C]
+  [/]┌──────────────────
+  [/][C1,│]
+  [/]│[&R]
+/E
+</pre>
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a href="javascript:expand('pstr_custom_108')">[Tips]
+                                コントロールパネルの項目を開く方法</a>
+                        </li>
+
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_custom_108" style="display: none;">
+                            コントロールパネルを起動するには「control.exe」という実行ファイルを指定します。そして、各種の項目にアクセスするには「*.cpl」という名前のファイルを引数に指定します。<br>
+                            ただし、cplファイルは関連付けされているので「control.exe」を省略することも可能です。<br><br>
+
+                            <pre class="smp-code">
+コントロールパネルを起動 | [!E "control.exe"]
+
+［コンパネ］マウスの設定 | [!E "main.cpl"]
+［コンパネ］キーボードの設定 | [!E "main.cpl" "@1"]
+
+［コンパネ］プログラムと機能 | [!E "control.exe" "appwiz.cpl"]
+［コンパネ］インターネットのプロパティ | [!E "control.exe" "inetcpl.cpl"]
+
+; 後者のようにタブ付きのダイアログが表示される場合には、
+; 以下のように指定すれば初期ページも設定することができます。
+
+; "inetcpl.cpl,,2"でゼロベースのインデックスを指定します。
+［コンパネ］インターネットのプロパティ | [!E "control.exe" "inetcpl.cpl,,2"] 
+</pre>
+                            <br>
+                            他の項目の「cplファイル名」は以下のURLなどを参考にしてみてください。<br>
+                            <a href="https://www.atmarkit.co.jp/ait/articles/0507/02/news016.html"
+                                target="_blank">コントロール パネルのツールをコマンド入力で実行する方法</a>
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a href="javascript:expand('pstr_custom_109')">[Tips]
+                                セパレータの前後の項目を入れ替える方法</a>
+                        </li>
+
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_custom_109" style="display: none;">
+                            例えば、以下のような形式で記述されたテキストがあるとします。<br><br>
+
+                            商品名Ａ：IT0001<br>
+                            商品名Ｂ：IT0002<br>
+                            商品名Ｃ：IT0003<br>
+                            商品名Ｄ：IT0004<br><br>
+
+                            このテキストを以下のように変更したいとします。<br><br>
+
+                            IT0001：商品名Ａ<br>
+                            IT0002：商品名Ｂ<br>
+                            IT0003：商品名Ｃ<br>
+                            IT0004：商品名Ｄ<br><br>
+
+                            数が少なければ手作業でも構いませんが、もし１００行以上あるような場合には憂鬱な気分になってしまいます。<br>
+                            そこで、以下のような正規表現のタグを使用すると一発で変換ができます。<br>
+                            残業は切り上げて、早く帰ることができます。(^_^)<br><br>
+
+                            <pre class="smp-code">
+; 正規表現の詳細については解説本などを参考にしてください。
+; セパレータは「：」にしていますが必要に応じて変更してください。
+
+Ａ：Ｂ反転 | [@ s/^[ 　\t]*([^\s]+)\s*：\s*([^\s]+)[ 　\t]*(\n?)$/$2：$1$3/mg]
+</pre>
+                            <br>
+
+                            この方法を応用すると、項目が３つ以上あるような場合でも自由に並べ替えができます。
+                            <br><br>
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a href="javascript:expand('pstr_custom_110')">[Tips]
+                                インターネットバンキングの自動ログオン用のスクリプトをまとめてみました。</a></li>
+
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_custom_110"
+                            style="border-bottom: 1px solid #dbdbdb; display: none;">
+                            インターネットバンキングのように定期的にログオンしているサイトでは、以下のようなスクリプトを使っています。
+                            代表的なものをいくつか紹介してみたいと思います。使い方は、それぞれのサイトのログオンページで一番初めに入力する場所にキャレットをセットしてから、下記のコマンドを実行するだけです。<br><br>
+
+                            各スクリプトの末尾にある[!L]はクリップボードを空にするタグです。パスワードなどはクリップボードに残さないようにした方が安全です。
+                            その他のサイトについても、下記のスクリプトを参考にすれば簡単に作成できると思います。<br>
+                            なお、Webサイトのログオンフォームは時々変更されることがありますので、その際には調整しなおしてください。<br><br>
+
+                            なお、2020年11月頃から三菱UFJダイレクトにおいて、ログインしようとすると下記のようなエラーメッセージが表示されることがあります。<br>
+                            <strong>「正しい取引開始画面から操作されていません。再度お取引を行ってください。」</strong><br><br>
+
+                            これは、ログインページのURLをブックマーク（お気に入り）に登録していて直接アクセスした場合に起きるようです。
+                            サポート窓口に問い合わせた結果、トップページ（<a href="https://www.bk.mufg.jp/" target="_blank">https://www.bk.mufg.jp/</a>）にアクセスしてからログイン画面に移動すれば大丈夫です。<br><br>
+
+                            また、下記のようなスクリプトを使用してログオンする場合には、<strong>Webブラウザのオートコンプリートの機能はオフ</strong>にしておいてください。
+                            オンになっていると、パスワードが２重に入力されてしまう、などの不具合が起きることがあります。
+
+                            <pre class="smp-code">
+; 2019年3月20日現在、動作確認が取れているものです。
+
+三菱UFJダイレクトにログオン|
+  [/](ご契約番号)[!K "TAB"](店番号：３桁)[!K "TAB"](口座番号：７桁)
+  [/][!K "TAB"](パスワード)[!K "TAB"][!K "ENTER"][!L]
+/E
+
+; ２ページ目に移動した後に少し待機してからパスワードを入力します。
+みずほダイレクトにログオン|
+  [/](お客様番号)[!K "TAB"][!W 300][!K "ENTER"][!W 3000](パスワード)
+  [/][!W 300][!K "ENTER"][!L]
+/E
+
+; ２ページ目に移動した後に[Tab]キーを押してキャレットをセットしてから
+; パスワードを入力します。
+ゆうちょタイレクトにログオン|
+  [/](お客様番号１)[!W 200](お客様番号２)[!W 200](お客様番号３)
+  [/][!K "TAB"][!W 200][!K "ENTER"][!W 2000][!K "PAGE_DOWN"]
+  [/][!K "TAB"](パスワード)[!K2 "TAB"][!W 200][!K "ENTER"][!L]
+/E
+</pre>
+                        </li>
+                    </ul>
+
+                    <h4 id="faq_pstr_stack">「スタックメニュー」関連</h4>
+                    <ul>
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_stack_001')">キーボードのファンクションキーの下にある数字キーを押すと勝手にテキストが貼り付いてしまいます。
+                            </a></li>
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_stack_001" style="display: none;">
+                            この状況は<strong>ダイレクトペーストモードという機能がオンになっている</strong>ものと思います。
+                            これは、スタックメニューをいちいち表示することなくクリップボードの履歴をペーストするための機能です。
+                            ペースターのトレイアイコンの背景が赤紫色になっている時がこのモードです。<br>
+                            ペースターの動作をいろいろと試しているうちに、いつのまにかこのモードになってしまうことがあります。<br><br>
+
+                            解除するには、スタックメニューを表示して下から２番目にある「ダイレクトペースト」項目の横にあるチェックマークをはずせばオフになります。
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_stack_002')">いつのまにかクリップボードの履歴を取らなくなってしまいます。</a>
+                        </li>
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_stack_002"
+                            style="border-bottom: 1px solid #dbdbdb; display: none;">
+                            ＰＣでいろいろな作業をしてると、いつのまにかクリップボードの履歴を取らなくなってしまうことがあります。
+                            私もこの現象は確認してるのですが根本的な原因がまだ分かりません。 <br><br>
+
+                            現在の対処方法としては、履歴を取らなくなってしまったらトレイメニューかスタックメニューにある「クリップボードチェーンをリセット」コマンドを実行してみてください。<br>
+                            または、[ペースターの設定]ダイアログの[スタックメニュー]ページにある、「クリップボードチェーンの監視」で適当な時間を設定してみてください。
+                            ここで０秒以外の値を指定すると、タイマーを起動して指定の時間ごとにクリップボードチェーンが切れていないかを確認します。もし、切れていたら自動的にリセットします。<br><br>
+
+                            Ver4.03から、上記の[スタックメニュー]ページに<strong>「クリップボードチェーンの状態をチェックする」</strong>というオプションを追加しました。このオプションをオンにすると、クリップボードが更新される前にチェーンが切れていないかをチェックします。もし切れていたらチェーンを修復してからアプリに制御を戻します。ただし、この割り込み処理によるチェックは相性の悪いアプリがあるようなので、その場合にはオフにしてタイマーによる監視を行ってください。
+                        </li>
+                    </ul>
+
+                    <h4 id="faq_pstr_etc">「その他」の項目</h4>
+                    <ul>
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a href="javascript:expand('pstr_etc_008')">使用するアプリによってペースターのメニューが表示できたり、できなかったりします。</a>
+                        </li>
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_etc_008" style="display: none;">
+                        ６４ビット版のアプリからはペースターのメニューが表示できるのに、３２ビット版のアプリからはメニューが表示できない（あるいはその逆）、
+                        といった現象が起きる場合にはキーボードフックチェーンの中に６４ビットのアプリと３２ビットのアプリが混在している可能性があります。<br>
+                        このようなケースではキーボードメッセージが正常に届かないことがあります。<br><br>
+
+                        解決方法としては、今現在６４ビット版のペースターを使用している場合には、いったんアンインストールしてから３２ビット版のペースターをインストールする、
+                        という方法があります。<br><br>
+
+                        あるいは、キーボードフックをインストールしている３２ビット版のアプリが分かっていてそのアプリの６４ビット版が公開されている場合には、
+                        ６４ビット版の方を使用する、という方法もあります。<br><br>
+
+                        いずれにしても、<strong>キーボードフックを使用しているアプリのビット数を揃えるようにしてみてください。</strong>
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a href="javascript:expand('pstr_etc_007')">Microsoft Edgeの中からペースターのメニューが呼び出せません。</a>
+                        </li>
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_etc_007" style="display: none;">
+                            ペースターは「Microsoft
+                                Edge」上では動作しません、と説明していたのですが、<strong>2020年1月15日にリリースされた最新版のEdgeから、ペースターが動作するようになりました。</strong>Edgeを利用されている方は、<a
+                                href="https://support.microsoft.com/ja-jp/help/4501095/download-the-new-microsoft-edge-based-on-chromium"
+                                target="_blank">こちらのページ</a>から是非最新版をダウンロードして使ってみてください。
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_etc_001')">ペースターの動作環境のリストにWindows7がありませんが、Windows7では動作しないのでしょうか？</a>
+                        </li>
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_etc_001" style="display: none;">
+                            大変申し訳ありませんが、ペースターはWindows7では動作しません。時々、ご要望のメールを頂くのですが、Windows7は2020年の1月14日にサポートが終了することが決まっています。
+                            もし、まだWindows7のマシンを使用している場合には、下記のマイクロソフトの公式アナウンスを参照してみてください。<br><br>
+
+                            <a href="https://support.microsoft.com/ja-jp/help/4057281/windows-7-support-will-end-on-january-14-2020"
+                                target="_blank">2020年1月14日に、Windows7のサポートが終了</a>
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_etc_002')">32bit版のペースターと64bit版のペースターを同時にインストールしてしまいました。これらをアンインストールする方法を教えてください。</a>
+                        </li>
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_etc_002" style="display: none;">
+                            旧バージョンでは、このようなことが起きていたのですが、Ver7以降ではインストーラが現在インストールされているペースターのビット数を検知して、多重インストールを防止するようになっています。
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_etc_003')">ペースターのトレイアイコンとはどこに表示されているのでしょうか？</a></li>
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_etc_003" style="display: none;">
+                            トレイアイコンはタスクバーのシステムトレイ（通知領域）に表示されるものです。下記の画像を参照してみてください。<br><br>
+
+                            <img src="images/tray.png" width="342" height="151" alt="トレイアイコン">
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_etc_004')">システムの起動時にペースターのアイコンがシステムトレイ（通知領域）に表示されないことがあります。</a>
+                        </li>
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_etc_004" style="display: none;">
+                            この現象が起きる場合には、ペースターの最新版（Ver6.00以降）にアップグレードしてみてください。
+                            アイコンの登録に失敗した場合には、少し時間を置いてリトライするようにしました。
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_etc_005')">ペースターを終了しても[PasHook.dll]というDLLが開放されないことがあります。</a>
+                        </li>
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_etc_005" style="display: none;">
+                            ペースターをトレイメニューから手動で終了した時に、「PasHook.dll」というDLLが開放されずにシステム関連モジュールにロックされてしまうことがあります。
+                            この結果「PasHook.dll」を削除したり移動することができなくなってしまいます。<br>
+                            マイクロソフトのナレッジベースによるとこれはOSのバグということです。残念ながらこの現象は最近のWindowsでもフィックスされていないようです。
+                            また、このモジュールにロックされてしまったファイルを開放するには、システムを再起動するしかありません。<br><br>
+
+                            本来ペースターはシステムの起動時から終了時まで常駐していますので、使用上の実害はありません。
+                            ただし、ペースターをアップグレードする時に「PasHook.dll」などのファイルがアクセス拒否を起こしてコピーできないことがあります。<br><br>
+
+                            Ver7.00からは、もしアップグレード時にDLLがロックされている場合には、いったんOSを再起動してから、すぐにペースターを終了させてインストールを行うようにメッセージを出すようにしました。
+                        </li>
+
+                        <!-- 質問 -->
+                        <li class="no-sep item-faq"><a
+                                href="javascript:expand('pstr_etc_006')">64bit版のOSで、エクスプローラなどのフォルダ名やファイル名を変更するためにカスタムメニューやスタックメニューを表示すると、選択が解除されてしまい項目名を変更することができません。</a>
+                        </li>
+                        <!-- 回答 -->
+                        <li class="faq_ans" id="pstr_etc_006" style="border-bottom: 1px solid #dbdbdb; display: none;">
+                            Ver6.20から64bit版のペースターを公開しておりますので、64bit版のOSに対してはこちらをインストールしてお使いください。
+                            上記の現象は解消されると思います。<br><br>
+
+                            ただし、64bit版のOSで動作している32bit版のアプリでツリービューやリストビューを使用している場合には、やはり同様の現象が起きてしまいます。
+                            こちらにつきましては、制限事項とさせてください。
+                        </li>
+
+                    </ul>
+                </article>
+
+                <div class="subnavi">
+                    <ul class="toInfo">
+                        <li><a href="support.htm">このページのトップへ</a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </section>
+        <!-- / コンテンツ -->
+
+        <aside id="sub">
+            <section class="grid v-space">
+                <h3>このページの目次</h3>
+                <ul>
+                    <li><a href="#faq_paster">よくある質問（ペースター）</a></li>
+                    <li><a href="#faq_pstr_custom">==&gt; 「カスタムメニュー」関連</a></li>
+                    <li><a href="#faq_pstr_stack">==&gt; 「スタックメニュー」関連</a></li>
+                    <li><a href="#faq_pstr_etc">==&gt; 「その他」の項目</a></li>
+                </ul>
+            </section>
+
+            <section class="grid">
+                <h3>関連項目</h3>
+                <ul>
+                    <li><a href="paster.htm">ペースター</a></li>
+                    <li><a href="soft_hist.htm">更新履歴</a></li>
+                </ul>
+            </section>
+
+        </aside>
+
+    </div>
+    <!-- / WRAPPER -->
+
+    <!-- フッター -->
+    <div id="footer">
+        <div class="inner">
+
+            <!-- 3カラム -->
+            <section class="gridWrapper">
+
+                <article class="grid">
+                    <!-- ロゴ -->
+                    <p class="logo"><a href="index.html">Autumn Soft<br /><span>Presented by Simplex Co.,
+                                Ltd.</span></a></p>
+                    <!-- / ロゴ -->
+                </article>
+
+                <article class="grid col3">
+                    <ul>
+                        <li><a href="index.html">トップページ</a></li>
+                        <li><a href="paster.htm">ペースター</a></li>
+                        <li><a href="support.htm">サポート</a></li>
+                        <li><a href="programming.htm">プログラミング</a></li>
+                        <li><a href="job.htm">お仕事の依頼</a></li>
+                        <li><a href="access.htm">お問い合わせ</a></li>
+                    </ul>
+                    <p>Copyright(c) 1997 Autumn Soft. All Rights Reserved. Design by <a href="http://f-tpl.com"
+                            target="_blank" rel="nofollow">http://f-tpl.com</a></p>
+                </article>
+
+            </section>
+            <!-- / 3カラム -->
+
+        </div>
+    </div>
+    <!-- / フッター -->
+
+</body>
+
+</html>
