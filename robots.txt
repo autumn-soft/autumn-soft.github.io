@@ -1,0 +1,4 @@
+User-Agent:*
+Disallow:
+
+Sitemap: https://autumn-soft.github.io/sitemap.xml
