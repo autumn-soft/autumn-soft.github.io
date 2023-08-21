@@ -194,6 +194,9 @@
 								<li class="no-sep">
 									<strong>[オンデマンド入力]のタグ：</strong>カスタムメニューファイルには記述していないタグをその場で入力して実行するためのタグです。これにより、たまにしか使用しないタグをその都度メニューファイルに記述する必要がなくなります。
 								</li>
+								<li class="no-sep">
+									<strong>[プロンプト入力]のタグ：</strong>画像生成AIなどで使用するプロンプトを簡単に入力するためのタグです。
+								</li>
 								<li class="no-sep"><strong>[その他]のタグ：</strong>その他の補助的な作業を行うためのタグです。</li>
 							</ul>
 						</li>
@@ -251,10 +254,10 @@
 						<a href="images/stack3.png"><img src="images/stack3.png" width="210" height="210" alt=""></a>
 						<figcaption class="fig-cap">スタックメニュー３</figcaption>
 					</figure>
-					<figure class="grid">
+					<!-- <figure class="grid">
 						<a href="images/keystroke.png"><img src="images/keystroke.png" width="210" height="210" alt=""></a>
 						<figcaption class="fig-cap">キーストロークの発行</figcaption>
-					</figure>
+					</figure> -->
 					<figure class="grid">
 						<a href="images/tag_pipe.png"><img src="images/tag_pipe.png" width="210" height="210" alt=""></a>
 						<figcaption class="fig-cap">パイプ機能の例</figcaption>
@@ -262,6 +265,10 @@
 					<figure class="grid">
 						<a href="images/demand1.png"><img src="images/demand1.png" width="210" height="210" alt=""></a>
 						<figcaption class="fig-cap">オンデマンド入力</figcaption>
+					</figure>
+					<figure class="grid">
+						<a href="images/sd_prompt_rl_2.png"><img src="images/sd_prompt_rl_2.png" width="210" height="210" alt=""></a>
+						<figcaption class="fig-cap">プロンプト入力（画像生成AI）</figcaption>
 					</figure>
 				</article>
 
@@ -303,19 +310,21 @@
 					<h4 style="margin-top: 50px;">ペースター［ソフト本体］</h4>
 					<ul>
 						<li class="no-sep"><a href="soft_hist.htm#paster">最近の更新履歴はこちらです。</a></li>
+						<li class="no-sep"><a href="#custom_menu">各種のカスタムメニューはこちらです。</a></li>
+						<li class="no-sep"><a href="#prompt_menu">各種のプロンプトメニューはこちらです。</a></li>
 					</ul>
 
 					<h5>ペースター [64bit版]</h5>
 					<p>自己解凍式のインストーラになっていますので、ダウンロードしたファイルを実行すると自動的にインストール（またはアップデート）が始まります。</p>
 
 					<ul>
-						<li class="no-sep"><strong>バージョン：Ver7.30</strong></li>
-						<li class="no-sep"><strong>更新日：2023/02/08</strong></li>
-						<li class="no-sep"><strong>ファイルサイズ：4.10MB</strong></li>
+						<li class="no-sep"><strong>バージョン：Ver7.31</strong></li>
+						<li class="no-sep"><strong>更新日：2023/08/22</strong></li>
+						<li class="no-sep"><strong>ファイルサイズ：4.14MB</strong></li>
 					</ul>
 
 					<p style="text-align: center; margin-left: 20px;">
-						<button type="button" class="Paster-DL" onclick="location.href='data/pstr730_x64.exe'">　ダウンロード
+						<button type="button" class="Paster-DL" onclick="location.href='data/pstr731_x64.exe'">　ダウンロード
 							[64bit版]　</button>
 					</p>
 
@@ -323,13 +332,13 @@
 					<p>最近では64bit版のOSが主流になっていますので、特に理由がない限りは上記の64bit版をインストールすることをお勧めします。</p>
 
 					<ul>
-						<li class="no-sep"><strong>バージョン：Ver7.30</strong></li>
-						<li class="no-sep"><strong>更新日：2023/02/08</strong></li>
-						<li class="no-sep"><strong>ファイルサイズ：3.57MB</strong></li>
+						<li class="no-sep"><strong>バージョン：Ver7.31</strong></li>
+						<li class="no-sep"><strong>更新日：2023/08/22</strong></li>
+						<li class="no-sep"><strong>ファイルサイズ：3.61MB</strong></li>
 					</ul>
 
 					<p style="text-align: center; margin-left: 20px;">
-						<button type="button" class="Paster-DL" onclick="location.href='data/pstr730.exe'">　ダウンロード
+						<button type="button" class="Paster-DL" onclick="location.href='data/pstr731.exe'">　ダウンロード
 							[32bit版]　</button>
 					</p>
 
@@ -473,6 +482,35 @@
 						<button type="button"
 							onclick="window.open('https://www.alse-net.com/column/email-reibun.htm', '_blank')">　サイトに移動する　</button>
 					</p>
+
+					<h4 id="prompt_menu" style="margin-top: 30px;">各種のプロンプトメニュー</h4>
+					<p>以下のパートでは、最近話題の画像生成AIで使用するプロンプト入力用のメニューを紹介していきます。<br>
+						もし、ユーザーの方が作成された便利なメニューがありましたら、是非ご連絡ください。
+						こちらで紹介させて頂きます。<br><br>
+
+						<img src="images/prompt.png" width="600" alt="プロンプト入力ダイアログ">
+					</p>
+
+						<h5>Stable Diffusion用（実写系）のプロンプトメニュー</h5>
+						<p>Stable Diffusion用（実写系）のプロンプトを簡単に入力するためのカスタムメニューです。<br>
+							具体的な使用方法はダウンロードしたファイル（SD_Hiroshi.zip）に含まれている「ReadMe.txt」を参照してください。<br>
+							このメニューファイルを元にして、各自で自由にカスタマイズしてみてください。<br>
+							<a href="images/sd_prompt_rl_1.png">&gt;&gt;&gt; こんな感じのメニューです（その１）</a><br>
+							<a href="images/sd_prompt_rl_2.png">&gt;&gt;&gt; こんな感じのメニューです（その２）</a><br>
+							<!-- <a href="" target="_blank">&gt;&gt;&gt;
+								noteへの投稿記事（準備中・・・）</a> -->
+						</p>
+	
+						<ul>
+							<li class="no-sep"><strong>バージョン：Ver1.00</strong></li>
+							<li class="no-sep"><strong>更新日：2023/08/18</strong></li>
+							<li class="no-sep"><strong>ファイルサイズ：9.76KB</strong></li>
+							<li class="no-sep"><strong>作成者：オータム西野</strong></li>
+						</ul>
+	
+						<p style="text-align: center; margin-left: 20px;">
+							<button type="button" class="SD-Hiroshi-DL" onclick="location.href='data/SD_Hiroshi.zip'">　ダウンロード　</button>
+						</p>
 				</article>
 
 				<div class="subnavi">
@@ -485,12 +523,9 @@
 			<section class="content">
 				<h3 id="donation" class="heading">ドネーションウェアについて</h3>
 				<article class="grid" style="width:100%;">
-					<!-- <p><a href="images/paster_donation_2023.png" target="_blank">2023年（１月分まで）のご寄付</a><br>
-						<a href="images/paster_donation_2022.png" target="_blank">2022年のご寄付</a> ／
-						<a href="images/paster_donation_2021.png" target="_blank">2021年のご寄付</a> ／
-						<a href="images/paster_donation_2020.png" target="_blank">2020年のご寄付</a> ／
-						<a href="images/paster_donation_2019.png" target="_blank">2019年のご寄付</a><br>
-					</p> -->
+					<p><a href="images/paster_donation_2023.png" target="_blank">2023年（７月分まで）のご寄付</a> ／
+						<a href="images/paster_donation_2022.png" target="_blank">2022年のご寄付</a> ／<br>
+					</p>
 
 					<p>ペースターは作者が著作権を保有しているドネーションウェアです。<br>
 						<strong>基本的にはフリーソフトですので、すべての機能を無期限、無制限で使用することができます。</strong>
@@ -500,7 +535,11 @@
 
 					<hr>
 
-					<p><strong>また、会社などでペースターを商用利用されている場合には、インストール台数に応じてご支援を頂けると本当に助かります。</strong><br>
+					<p>ペースターの開発を続けていくためには、年間で３～４万円程度の資金が必要になります。ソフトにデジタル署名を付ける料金（23,100円）と私自身のプログラミングの勉強代（書籍やUdemyの講座など）です。
+						また、2023年6月からはデジタル署名の料金が<a href="https://comodo.jp/topics/dtl_142" target="_blank">「60,500円／年」に大幅値上げ</a>されました。<br>
+						これは正直言って<strong>「フリーソフトなんかやめちまえ！」</strong>という言葉に等しいです。</p>
+
+					<p><strong>会社などでペースターを商用利用されている場合には、インストール台数に応じてご支援を頂けると本当に助かります。</strong><br>
 						領収書も発行できます。（PDFファイルとしてメールに添付する形式）
 					</p>
 
@@ -521,7 +560,9 @@
 					</p>
 
 					<h4>アマゾンギフト券</h4>
-					<p>アマゾンギフト券（E-Mailタイプ）は、相手のメアドが分かれば簡単に送ることができるE-Mail形式のギフト券です。
+					<p><strong>最近はアマゾンで買い物をすることがほとんどないので、できれば上記のいずれかでお願い致します。</strong><br><br>
+
+						アマゾンギフト券（E-Mailタイプ）は、相手のメアドが分かれば簡単に送ることができるE-Mail形式のギフト券です。
 						アマゾンのアカウントをお持ちの方であれば、以下のサイトから手続きを行うことができます。<br><br>
 
 						<a href="https://www.amazon.co.jp/Amazon%E3%82%AE%E3%83%95%E3%83%88%E5%88%B8-1_JP_Email-Amazon%E3%82%AE%E3%83%95%E3%83%88%E5%88%B8-E%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%97-Amazon%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF/dp/B004N3APGO/ref=lp_3131877051_1_1?s=gift-cards&ie=UTF8&qid=1552283357&sr=1-1"
